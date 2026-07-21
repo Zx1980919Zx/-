@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Счётчик</title>
+    <title>Калькулятор</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main class="panel">
-        <h1 class="zagolovok">Счётчик</h1>
+    <main class="korpus">
+        <h1 class="zagolovok">Интерактивный калькулятор</h1>
 
-        <div class="tablo" id="result">0</div>
-
-        <div class="knopki">
-            <button type="button" class="btn" id="btn-minus">&minus;</button>
-            <button type="button" class="btn" id="btn-plus">+</button>
+        <div class="polya">
+            <input type="text" id="num1" class="pole" placeholder="Первое число">
+            <input type="text" id="num2" class="pole" placeholder="Второе число">
         </div>
 
-        <div class="soobshenie" id="message"></div>
+        <div class="deystviya">
+            <button type="button" class="op" data-op="sum">Сумма</button>
+            <button type="button" class="op" data-op="sub">Разность</button>
+            <button type="button" class="op" data-op="mul">Произведение</button>
+            <button type="button" class="op" data-op="div">Деление</button>
+        </div>
+
+        <div class="itog" id="result"></div>
     </main>
 
     <script src="script.js"></script>
